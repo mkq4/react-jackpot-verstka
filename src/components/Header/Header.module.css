@@ -1,0 +1,41 @@
+.header {
+    padding-top: 20px;
+}
+
+.header__logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    width: 200px;
+}
+
+.header__navLink {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: .3s;
+    &:hover {
+        color: #CDC6FF;
+    }
+}
+
+.header__navList {
+    display: flex;
+    gap: 30px;
+    margin-right: 35px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__inner {
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+
+}

@@ -1,0 +1,21 @@
+.button {
+    font-size: 18px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #7400D3;
+    border: 0;
+    box-shadow: 0 4px 0 #521EAA;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: #6C00D2;
+        color: #CDC6FF;
+    }
+}
+

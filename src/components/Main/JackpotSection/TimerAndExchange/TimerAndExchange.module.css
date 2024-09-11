@@ -1,0 +1,94 @@
+.timer__line {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  margin-top: 40px;
+  span {
+    font-size: 45px;
+    margin: 0 10px;
+  }
+}
+
+.timer {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  max-width: 475px;
+  h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 62px;
+    text-align: left;
+  }
+}
+
+.timer__minutes,
+.timer__seconds {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: 3px solid #a7218b;
+  border-radius: 15px;
+  min-width: 120px;
+  position: relative;
+}
+
+.timer__minutes::before {
+    content: 'Minutes';
+    position: absolute;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+}
+
+.timer__seconds::before {
+    content: 'Seconds';
+    position: absolute;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+}
+
+.timer__left {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  margin-left: 40px;
+}
+
+.timer {
+  text-align: center;
+}
+
+.loadingBar {
+  margin-top: 70px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.loadingBarTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  width: 100%;
+  background-color: #9283B3;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  background: linear-gradient(90deg, #ef542b 0%, #b00277 100%);
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
