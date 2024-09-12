@@ -31,7 +31,7 @@ const Timer = () => {
 
   return (
     <div className={cl.timer}>
-      <h2>Earn Big Today!</h2>
+      <h2 style={{marginTop:"32px"}}>Earn Big Today!</h2>
       <div className={cl.timer__line}>
         <div className={cl.timer__minutes}>{minutes.toString().padStart(2, "0")}</div>
         <span>:</span>

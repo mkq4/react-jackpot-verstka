@@ -8,6 +8,7 @@
 }
 #root {
   background-image: url('./images/bgc.png');
+  background-size: 100%, 100%;
 }
 li {
   list-style: none;
@@ -20,4 +21,9 @@ a {
   width: 1280px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
