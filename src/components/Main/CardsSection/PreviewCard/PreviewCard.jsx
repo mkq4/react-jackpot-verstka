@@ -1,20 +1,47 @@
 /* eslint-disable react/prop-types */
-import cl from "../CardsSection.module.css"
+import GradientLine from "../../../UI/GradientLine/GradientLine";
+import cl from "../CardsSection.module.css";
 
-const PreviewCard = ({title, img, ltContent, lbContent, rtContent, rbContent}) => {
+const PreviewCard = ({
+  title,
+  img,
+  ltContent,
+  lbContent,
+  rtContent,
+  rbContent,
+  rbContentAmount,
+  rtContentAmount,
+}) => {
   return (
     <div className={cl.previewCard}>
-        <h3>{title}</h3>
-        <div className={cl.cardBody}>
-            <img src={img} alt="" style={{width: "50px", height: "50px"}}/>
-            <div className={cl.cardBodyContent}>
-                <div className={cl.cardBodyContentBlock1}><span>{ltContent}</span><span>{lbContent}</span></div>
-                <span></span>
-                <div className={cl.cardBodyContentBlock2}><span>{rtContent}</span><span>{rbContent}</span></div>
-            </div>
+      <h3>{title}</h3>
+      <div className={cl.cardBody}>
+        <img
+          src={img}
+          alt=""
+          style={{ width: "122px", height: "122px", marginRight: "31px" }}
+        />
+        <div className={cl.cardBodyContent}>
+          <div className={cl.cardBodyContentBlock1}>
+            <span>{ltContent}</span>
+            <span>
+              <span>{lbContent}</span>
+            </span>
+          </div>
+          <GradientLine type={'small'}/>
+          <div className={cl.cardBodyContentBlock2}>
+            <span>
+              {rtContent} {rtContentAmount}
+            </span>
+            <span>
+              {rbContent}
+              {rbContentAmount}
+            </span>
+          </div>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PreviewCard
+export default PreviewCard;

@@ -1,0 +1,14 @@
+.small {
+    display: block; /* Добавьте это */
+    height: 90px;
+    width: 3px;
+    background: linear-gradient(#DB205B, #7000D3); /* Уберите кавычки */
+    margin: 0 20px;
+}
+
+.big {
+    display: block; /* Добавьте это */
+    height: 125px;
+    width: 12px;
+    background: linear-gradient(#DB205B, #7000D3); /* Уберите кавычки */
+}

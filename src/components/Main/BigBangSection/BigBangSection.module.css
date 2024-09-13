@@ -1,0 +1,30 @@
+.bigBangSection {
+    padding-top: 25px;
+}
+.bigBangSectionInner {
+    h2 {
+        text-align: center;
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 55px;
+        margin-bottom: 50px;
+        span {
+            font-family: "Chakra Petch", sans-serif;
+            color: #EB4834;
+        }
+    }
+}
+
+.bigBangText {
+    display: flex;
+    gap: 25px;
+    p {
+        color: #CDC6FF;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        line-height: 2;
+    }
+}
+
+.bigBangSectionContent {
+    display: flex;
+}
