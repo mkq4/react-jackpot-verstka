@@ -1,5 +1,7 @@
 .bigBangSection {
     padding-top: 25px;
+    background: url('../../../assets/overview.png');
+    background-size: 100% 100%;
 }
 .bigBangSectionInner {
     h2 {

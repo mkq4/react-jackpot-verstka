@@ -1,0 +1,42 @@
+.theJackpotSection {
+  background-color: #271270;
+
+  h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+    span {
+      color: #eb4834;
+      font-family: "Chakra Petch", sans-serif;
+    }
+  }
+}
+
+.theJackpotSectionInner {
+  display: flex;
+  gap: 150px;
+}
+
+.theJackpotSectionText {
+    font-size: 19px;
+
+  p,
+  li {
+    color: #cdc6ff;
+    line-height: 1.8;
+  }
+  li {
+    list-style: disc;
+    margin-left: 20px;
+    }
+    ul {
+        margin-top: 15px;
+    }
+}
+
+.theJackpotSectionImage {
+}
+
+.theJackpotSectionTextInner {
+    padding-right: 70px;
+}
