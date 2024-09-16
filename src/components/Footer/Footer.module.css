@@ -3,76 +3,151 @@
     background-position: 90% 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 615px;
+    padding: 20px; /* Добавим паддинг для мелких экранов */
 }
 
 .footerInner {
     display: flex;
     align-items: center;
-    gap: 100px;
-    position: relative;
-    flex-wrap: wrap;
-    top: 80px;
-    h2 {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 42px;
-    }
+    gap: 20px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.footer h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: auto;
 }
 
 .footerContent {
     display: flex;
     gap: 90px;
     position: relative;
-    top: 100px;
-
-    h3 {
-        font-family: "Chakra Petch", sans-serif;
-        font-size: 20px;
-    }
-
-    ul {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    li {
-        font-size: 16px;
-        font-weight: 300;
-    }
-}
-
-.footerBlock {
-    
-}
-
-.footerSocials {
-    div {
-        display: flex;
-        margin-top: 20px;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        a {
-            width: 40px;
-            height: 40px;
-            border: 1px solid #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-        }
-    }
-}
-
-.footerRights {
-    margin-top: 60px;
-    text-align: center;
+    top: 0;
+    flex-wrap: wrap; /* Делаем контент обтекаемым */
+    justify-content: center;
     width: 100%;
-    height: 70px;
+    padding-bottom: 40px;
+}
+
+.footerContent h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    text-align: center; /* Центрируем заголовки */
+}
+
+.footerContent ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Центрируем список */
+}
+
+.footerContent li {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center; /* Текст тоже по центру */
+}
+
+.footerSocials div {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerSocials a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+}
+
+.footerRights {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px; /* Начальный размер шрифта */
     border-top: 2px solid #3B3475;
-    font-size: 16px; /* Начальный размер шрифта */
+    padding-top: 20px;
+}
+@media (max-width: 1200px) {
+    .footerContent h3 {
+        font-size: 20px !important; 
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Автоматическая высота на маленьких экранах */
+    }
+
+    .footerInner {
+        top: 0;
+        gap: 30px;
+    }
+
+    .footer h2 {
+        font-size: 32px; /* Уменьшаем размер заголовка */
+    }
+
+    .footerContent {
+        gap: 30px; /* Уменьшаем расстояние между блоками */
+    }
+
+    .footerContent h3 {
+        font-size: 18px;
+    }
+
+    .footerContent li {
+        font-size: 14px;
+    }
+
+    .footerSocials a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footerRights {
+        font-size: 12px; /* Уменьшаем текст */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px; /* Увеличиваем паддинг для маленьких экранов */
+    }
+
+    .footerContent {
+        gap: 20px; /* Ещё больше сокращаем расстояние */
+    }
+
+    .footer h2 {
+        font-size: 28px;
+    }
+
+    .footerContent h3 {
+        font-size: 16px;
+    }
+
+    .footerContent li {
+        font-size: 12px;
+    }
+
+    .footerSocials a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footerRights {
+        font-size: 10px;
+    }
 }

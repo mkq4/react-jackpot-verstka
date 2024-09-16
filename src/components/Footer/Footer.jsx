@@ -19,9 +19,7 @@ const Footer = () => {
               <FooterBlock title={"My Account"} links={linksBlock3} />
               <FooterSocials/>
             </div>
-            <div className={cl.footerRights}>
-                <a target='_blank' href="https://github.com/mkq4">https://github.com/mkq4</a>
-            </div>
+
           </div>
         </Container>
       </footer>
