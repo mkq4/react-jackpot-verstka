@@ -1,6 +1,5 @@
 .theJackpotSection {
-  background-color: #271270;
-
+  background: rgba(39, 18, 112);
   h2 {
     font-family: "Chakra Petch", sans-serif;
     font-size: 45px;
@@ -15,6 +14,7 @@
 .theJackpotSectionInner {
   display: flex;
   gap: 150px;
+  position: relative;
 }
 
 .theJackpotSectionText {
@@ -34,8 +34,6 @@
     }
 }
 
-.theJackpotSectionImage {
-}
 
 .theJackpotSectionTextInner {
     padding-right: 70px;

@@ -8,7 +8,6 @@
 
 .footerInner {
     display: flex;
-    width: 1180px;
     align-items: center;
     gap: 100px;
     position: relative;
@@ -75,4 +74,5 @@
     align-items: center;
     justify-content: center;
     border-top: 2px solid #3B3475;
+    font-size: 16px; /* Начальный размер шрифта */
 }

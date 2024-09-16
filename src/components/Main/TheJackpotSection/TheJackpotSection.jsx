@@ -4,6 +4,7 @@ import jackpot from '../../../assets/jackpot.png'
 const TheJackpotSection = () => {
   return (
     <section className={cl.theJackpotSection}>
+        <img style={{position: "absolute", display: "block", opacity: "0.5 "}} src="./src/assets/salut.png" alt="" />
         <Container>
             <div className={cl.theJackpotSectionInner}>
                 <div className={cl.theJackpotSectionText}>
@@ -22,7 +23,9 @@ const TheJackpotSection = () => {
                     <img src={jackpot} alt=""/>
                 </div>
             </div>
+            
         </Container>
+    
     </section>
   )
 }

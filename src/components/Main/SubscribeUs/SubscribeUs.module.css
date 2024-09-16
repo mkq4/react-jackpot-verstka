@@ -11,9 +11,10 @@
     align-items: center;
     border-radius: 35px;
     position: relative;
-    width: 1180px;
+    max-width: 1180px;
     position: relative;
     background: linear-gradient(45deg, #7000D3, #280B70);
+    
     h2 {
         font-family: "Chakra Petch", sans-serif;
         font-size: 45px;

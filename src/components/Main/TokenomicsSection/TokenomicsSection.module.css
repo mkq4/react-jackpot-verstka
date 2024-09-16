@@ -1,5 +1,6 @@
 .tokenomicsSection {
-    background-color: #271270;
+    /* background-color: linear-gradient(to bottom, , ); */
+    background: linear-gradient(#210158, #271270);
     padding-top: 30px;
     padding-bottom: 90px;
     h2 {
