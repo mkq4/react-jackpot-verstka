@@ -17,9 +17,9 @@ const PreviewCard = ({
       <h3>{title}</h3>
       <div className={cl.cardBody}>
         <img
+        className={cl.cardImage}
           src={img}
           alt=""
-          style={{ width: "122px", height: "122px", marginRight: "31px" }}
         />
         <div className={cl.cardBodyContent}>
           <div className={cl.cardBodyContentBlock1}>

@@ -1,57 +1,97 @@
 .tokenomicsSection {
-    /* background-color: linear-gradient(to bottom, , ); */
     background: linear-gradient(#210158, #271270);
     padding-top: 30px;
     padding-bottom: 90px;
     h2 {
         font-family: "Chakra Petch", sans-serif;
-        font-size: 55px;
+        font-size: 50px;
         text-align: center;
+        margin-bottom: 50px;
+        padding-top: 50px;
         span {
             color: #EB4834;
             font-family: "Chakra Petch", sans-serif;
-            }
-        margin-bottom: 50px;
         }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
+.tokenomics2Cards {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Добавляем пространство между карточками */
+    @media (max-width: 1024px) {
+        flex-direction: column; /* Для планшетов и мобильных делаем вертикальное расположение карточек */
+        gap: 20px;
+        align-items: center; /* Выравнивание карточек по центру */
+    }
+}
 
 .tokenomicsCard {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px; /* Уменьшаем расстояние между элементами */
     max-width: 552px;
     justify-content: center;
     border: 2px solid #5B4AA3;
-    padding: 55px 50px;
+    padding: 40px 30px; /* Уменьшаем внутренние отступы для более компактного отображения */
     background-color: #3B278A;
     border-radius: 15px;
-    max-width: 552px;
     max-height: 357px;
+    transition: transform 0.3s ease; /* Добавляем плавную анимацию */
+
     h3 {
         font-family: "Chakra Petch", sans-serif;
-        font-size: 33px;
+        font-size: 30px;
     }
+
     ul {
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        font-size: 21px;
-        margin-left: 25px;
-        margin-top: 35px;
+        gap: 20px; /* Уменьшаем расстояние между пунктами */
+        font-size: 18px;
+        margin-left: 20px;
+        margin-top: 25px;
+
         li {
-            list-style:decimal;
+            list-style: decimal;
             color: #CDC6FF;
         }
     }
+
     img {
-        width: 201px;
-        height: 238px;
+        width: 180px;
+        height: 200px;
+        transition: all 0.3s ease; /* Плавное изменение размера изображения */
     }
+
+    &:hover {
+        transform: scale(1.05); /* Эффект увеличения карточки при наведении */
+    }
+
+
 }
-
-
-.tokenomics2Cards {
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 450px) {
+    .tokenomicsCard {
+        flex-direction: column;
+        height: 100%;
+        max-height: 100%;
+        img {
+            height: 140px;
+            width: 126px;
+        }
+    }
 }

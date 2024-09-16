@@ -1,27 +1,43 @@
 .howItWorksSection {
-    /* padding-top: 70px; */
     background-color: #271270;
-    padding-bottom: 45px;
+    padding: 70px 20px 45px; /* Добавляем padding по бокам */
     background: url('../../../assets/how-works-bg.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .howItWorksSectionInner {
-  h2 {
+    h2 {
         font-family: "Chakra Petch", sans-serif;
-        font-size: 55px;
+        font-size: 45px;
         text-align: center;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
         span {
             font-family: "Chakra Petch", sans-serif;
             color: #EB4834;
         }
     }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .howItWorksCards {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Для адаптации на малых экранах */
+    gap: 25px;
+    justify-content: center;
 }
 
 .howItWorksCard {
@@ -33,14 +49,45 @@
     width: 230px;
     padding: 20px;
     border-radius: 15px;
+    transition: transform 0.3s ease; /* Добавляем анимацию при наведении */
+
     img {
         margin-bottom: 20px;
+        width: 70px; /* Ограничиваем размер изображений */
+        height: auto;
     }
+
     p {
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         color: #CDC6FF;
-        line-height: 2;
+        line-height: 1.6;
+    }
+
+    &:hover {
+        transform: scale(1.05); /* Эффект увеличения при наведении */
+    }
+
+    @media (max-width: 768px) {
+        width: 180px;
+        height: auto; /* Адаптируем высоту */
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 100%; /* На маленьких экранах карточки занимают всю ширину */
+        height: auto;
+
+        img {
+            width: 70px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }

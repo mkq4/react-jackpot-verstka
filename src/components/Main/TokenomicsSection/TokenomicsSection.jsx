@@ -6,7 +6,7 @@ import illustration from "../../../assets/illustration.png";
 
 const TokenomicsSection = () => {
   return (
-    <section className={cl.tokenomicsSection}>
+    <sec className={cl.tokenomicsSection}>
       <Container>
         <div className={cl.tokenomicsSectionInner}>
           <h2>
@@ -33,7 +33,7 @@ const TokenomicsSection = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </sec>
   );
 };
 

@@ -1,21 +1,19 @@
-import HeaderLink from "./HeaderLink"
-import cl from "./Header.module.css"
-import Button from "../UI/Button/Button"
-
-
-const HeaderNav = () => {
+import cl from './Header.module.css';
+import Button from '../UI/Button/Button';
+// eslint-disable-next-line react/prop-types
+const HeaderNav = ({ isMenuOpen }) => {
   return (
-    <nav className={cl.header__nav}>
-          <ul className={cl.header__navList}>
-            <HeaderLink>Home</HeaderLink>
-            <HeaderLink>About</HeaderLink>
-            <HeaderLink>Tournaments</HeaderLink>
-            <HeaderLink>Contact us</HeaderLink>
-            <HeaderLink>Telegram</HeaderLink>
-          </ul>
-          <Button>connect wallet</Button>
+    <nav className={`${cl.header__nav} ${isMenuOpen ? cl.active : ''}`}>
+      <ul className={cl.header__navList}>
+        <li><a href="#home" className={cl.header__navLink}>Home</a></li>
+        <li><a href="#about" className={cl.header__navLink}>About</a></li>
+        <li><a href="#services" className={cl.header__navLink}>Services</a></li>
+        <li><a href="#contact" className={cl.header__navLink}>Contact</a></li>
+      </ul>
+      <Button>connect wallet</Button>
     </nav>
-  )
-}
+  );
+};
 
-export default HeaderNav
+export default HeaderNav;
+

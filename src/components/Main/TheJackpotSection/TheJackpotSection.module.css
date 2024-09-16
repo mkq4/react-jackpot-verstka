@@ -1,40 +1,119 @@
 .theJackpotSection {
   background: rgba(39, 18, 112);
+  margin-top: 100px;
+  padding: 50px 0;
+
   h2 {
     font-family: "Chakra Petch", sans-serif;
     font-size: 45px;
     margin-bottom: 20px;
+    text-align: left;
+
     span {
       color: #eb4834;
       font-family: "Chakra Petch", sans-serif;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 38px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 32px;
+      text-align: center;
     }
   }
 }
 
 .theJackpotSectionInner {
   display: flex;
-  gap: 150px;
+  gap: 100px;
   position: relative;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    gap: 50px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .theJackpotSectionText {
-    font-size: 19px;
+  font-size: 19px;
 
   p,
   li {
     color: #cdc6ff;
     line-height: 1.8;
   }
+
   li {
     list-style: disc;
     margin-left: 20px;
+  }
+
+  ul {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+
+    p,
+    li {
+      text-align: center;
     }
+
     ul {
-        margin-top: 15px;
+      margin-left: 0;
+      padding: 0;
     }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 
-
 .theJackpotSectionTextInner {
-    padding-right: 70px;
+  padding-right: 70px;
+
+  @media (max-width: 1024px) {
+    padding-right: 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+}
+
+.theJackpotSectionImage {
+  img {
+    /* max-width: 100%; */
+    height: auto;
+    display: block;
+    height: 200px;
+    width: 300px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 480px) {
+    img {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 }

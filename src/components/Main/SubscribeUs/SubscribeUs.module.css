@@ -1,12 +1,12 @@
-.subscribeUs{
+.subscribeUs {
     display: flex;
     align-items: center;
     padding-top: 90px;
     background-color: #271270;
     margin-bottom: -213px;
-}
-
-.subscribeUsInner {
+  }
+  
+  .subscribeUsInner {
     display: flex;
     align-items: center;
     border-radius: 35px;
@@ -14,51 +14,97 @@
     max-width: 1180px;
     position: relative;
     background: linear-gradient(45deg, #7000D3, #280B70);
-    
-    h2 {
-        font-family: "Chakra Petch", sans-serif;
-        font-size: 45px;
-        margin-left: -10px;
-        margin-bottom: 30px;
-    }
-    p {
-        line-height: 1.4;
-    }
-}
-
-.subscribeUsInputAndButton {
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
-    position: relative;
-    button {
-        margin-left: -155px;
-        margin-bottom: 4px;
-    }
-}
-
-.subscribeUsContent {
+    padding: 50px;
+  }
+  
+  .subscribeUsContent {
     position: relative;
     left: -185px;
     font-size: 40px;
     font-family: "Roboto", sans-serif;
     width: 550px;
     z-index: 1;
-}
-
-.subscribeUsInput {
+  }
+  
+  .subscribeUsInputAndButton {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    position: relative;
+    button {
+      margin-left: -155px;
+      margin-bottom: 4px;
+    }
+  }
+  
+  .subscribeUsInput {
     border-radius: 30px;
     padding: 5px 30px;
-    outline:none;
+    outline: none;
     background-color: #220970;
     border: 0;
     font-size: 19px;
     height: 70px;
     width: 100%;
-}
-
-.subscribeUsImage {
+  }
+  
+  .subscribeUsImage {
     position: absolute;
     right: 0;
     z-index: 0;
+    max-width: 50%;
+  }
+  @media (max-width: 1240px) {
+    .subscribeUsInner {width: 950px;}
+    .medalIcon {
+display: none;
+    }
+    .subscribeUsContent {
+        left: 0;
+    }
+    .subscribeUsImage {
+        max-width: 30%;
+    }
+  }
+  @media (max-width: 1024px) {
+    .subscribeUsImage {
+        display: none;
+    }
+    .subscribeUsInner {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 80px;
+    } 
+    .subscribeUsInput {
+        font-size: 15px;
+    }
+  }
+  @media (max-width: 780px) {
+    .subscribeUsInner {
+        padding: 50px;
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 25px;
+        }
+  }
+  .subscribeUsContent {
+    width: 100%;
+  }
 }
+@media (max-width: 550px) {
+    .subscribeUsInputAndButton {
+        flex-direction: column;
+        button {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        
+    }
+    .subscribeUsInner {
+        padding: 25px;
+    }
+}
+  

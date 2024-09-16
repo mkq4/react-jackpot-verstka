@@ -59,3 +59,22 @@
         margin-top: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .exchangeLineInput {
+      width: 100%;
+      margin-right: 200px;
+    }
+    .exchangeLineBottom {
+        margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .exchangeLineInput {
+        margin-right: 0;
+      }
+      .exchangeLineBottom p {
+        font-size: 14px;
+      }
+  }
