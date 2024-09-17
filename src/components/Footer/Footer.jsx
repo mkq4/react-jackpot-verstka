@@ -18,10 +18,15 @@ const Footer = () => {
               <FooterBlock title={"Legal Info"} links={linksBlock2} />
               <FooterBlock title={"My Account"} links={linksBlock3} />
               <FooterSocials/>
+
             </div>
 
           </div>
+
         </Container>
+        <div className={cl.footerRights}>
+          <a target='_blank' href="https://github.com/mkq4">https://github.com/mkq4</a>
+        </div>
       </footer>
     );
   };

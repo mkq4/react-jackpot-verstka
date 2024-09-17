@@ -10,8 +10,8 @@ import TokenomicsSection from "./TokenomicsSection/TokenomicsSection";
 
 const Main = () => {
   return (
-    <div className={cl.main}>
-
+    <main className={cl.main}>
+      
         <JackpotSection />
         <CardsSection />
         <HowItWorksSection />
@@ -19,7 +19,7 @@ const Main = () => {
         <TokenomicsSection />
         <TheJackpotSection />
         <SubscribeUs />
-    </div>
+    </main>
   );
 };
 

@@ -5,7 +5,9 @@
     align-items: center;
     justify-content: center;
     height: 615px;
-    padding: 20px; /* Добавим паддинг для мелких экранов */
+    padding: 20px;
+    height: 100%;
+    position: relative;
 }
 
 .footerInner {
@@ -31,7 +33,7 @@
     flex-wrap: wrap; /* Делаем контент обтекаемым */
     justify-content: center;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .footerContent h3 {
@@ -73,7 +75,8 @@
 }
 
 .footerRights {
-    margin-top: 40px;
+    position: absolute;
+    bottom: 20px;
     text-align: center;
     width: 100%;
     font-size: 14px; /* Начальный размер шрифта */
@@ -83,6 +86,10 @@
 @media (max-width: 1200px) {
     .footerContent h3 {
         font-size: 20px !important; 
+    }
+    .footerInner {
+        flex-direction: column;
+        margin-top: 250px;
     }
 }
 @media (max-width: 768px) {

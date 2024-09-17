@@ -32,4 +32,19 @@
     font-weight: 50;
     font-size: 22px;
     margin-top: 30px;
+    text-align: center;
+}
+@media (max-width: 415px) {
+    .jackpot__win {
+        font-size: 40px;
+        margin-top: -65px;
+    }
+    .jackpot__text {
+        font-size: 15px;
+    }
+    .jackpot__sharp {
+        img {
+            width: 100%;
+        }
+    }
 }

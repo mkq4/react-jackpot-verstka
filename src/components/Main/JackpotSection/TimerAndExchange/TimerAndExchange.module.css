@@ -143,4 +143,9 @@
   .timer__left {
     display: none;
   }
+  .loadingBarTop {
+    h3 {
+      font-size: 27px !important;
+    }
+  }
 }

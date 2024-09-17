@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(to bottom, #2F1781, #280B70);
-    opacity: .8;
+    opacity: .9;
     border: 2px solid #53499E;
     border-radius: 10px;
     h3 {
@@ -63,7 +63,6 @@
 @media (max-width: 600px) {
     .exchangeLineInput {
       width: 100%;
-      margin-right: 200px;
     }
     .exchangeLineBottom {
         margin-bottom: 20px;
