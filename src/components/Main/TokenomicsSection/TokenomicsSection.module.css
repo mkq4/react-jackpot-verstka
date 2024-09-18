@@ -8,9 +8,11 @@
         text-align: center;
         margin-bottom: 50px;
         padding-top: 50px;
+        font-weight: 700;
         span {
             color: #EB4834;
             font-family: "Chakra Petch", sans-serif;
+            font-weight: 700;
         }
     }
 
@@ -56,6 +58,7 @@
     h3 {
         font-family: "Chakra Petch", sans-serif;
         font-size: 30px;
+        font-weight: 600;
     }
 
     ul {

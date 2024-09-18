@@ -12,10 +12,11 @@
         font-family: "Chakra Petch", sans-serif;
         font-size: 50px;
         margin-bottom: 40px;
-
+        font-weight: 700;
         span {
             font-family: "Chakra Petch", sans-serif;
             color: #EB4834;
+            font-weight: 700;
         }
     }
 
