@@ -5,8 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   resolve: {
     alias: {
-      '@': '/src',  // или другой алиас, если используешь
+      '@': '/src'
     },
   },
   plugins: [react()],
+  base: '/react-jackpot-verstka/'
 });
