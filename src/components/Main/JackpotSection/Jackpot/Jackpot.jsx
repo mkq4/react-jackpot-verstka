@@ -5,7 +5,7 @@ const Jackpot = () => {
     <div className={cl.jackpot}>
         <h1>Live Jackpot</h1>
         <div className={cl.jackpot__sharp}>
-            <img src="/images/sharp.png" alt=""/>
+            <img src="./images/sharp.png" alt=""/>
             <p className={cl.jackpot__win}>$45,000</p>
         </div>
         <p className={cl.jackpot__text}>
